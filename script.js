@@ -20,6 +20,15 @@ jsonData.forEach(item => {
   subjectDiv.classList.add('subjects');
   subjectDiv.style.backgroundColor = `hsla(${getColorHue(item.category)}, 100%, ${getColorLightness(item.score)}%, 10%)`;
 
+  
+  subjectDiv.addEventListener('mouseover', function() {
+    subjectDiv.style.backgroundColor = `hsla(${getColorHue(item.category)}, 100%, ${getColorLightness(item.score)}%, 30%)`;
+  });
+
+  subjectDiv.addEventListener('mouseout', function() {
+    subjectDiv.style.backgroundColor = `hsla(${getColorHue(item.category)}, 100%, ${getColorLightness(item.score)}%, 10%)`;
+  });
+
   var logoImg = document.createElement('img');
   logoImg.classList.add('logo');
   logoImg.src = item.icon;
