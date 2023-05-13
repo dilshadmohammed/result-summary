@@ -7,10 +7,14 @@
 var resultValueElement = document.getElementById('resultValue');
 var resultTextElement = document.getElementById('resultText');
 var resultDescriptionElement = document.getElementById('resultDescription');
-
-resultValueElement.innerHTML = jsonData[0].score;
-resultTextElement.innerHTML = getGrade(jsonData[0].score);
-resultDescriptionElement.innerHTML = getDescription(jsonData[0].score);
+var sumScore=0;
+for(var i=0; i<4 ;i++){
+  sumScore+=jsonData[i].score;
+}
+var Average=Math.round(sumScore/4);
+resultValueElement.innerHTML = Average;
+resultTextElement.innerHTML = getGrade(Average);
+resultDescriptionElement.innerHTML = getDescription(Average);
 
 // Update the subjects
 var subjectContainer = document.getElementById('subjectContainer');
