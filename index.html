@@ -16,51 +16,25 @@
   </style>
 </head>
 <body>
-  <div class="main-container">
+  <main>
     <div class="result-box">
       <h4 style="font-weight: 700; font-size: 20px; margin-top: 20px;">Your Result</h4>
       <div class="percent-circle">
-        <h1 style="color: var(--white); font-weight: 800; font-size: 70px; margin: 0px;">76</h1>
+        <h1 id="resultValue" style="color: var(--white); font-weight: 800; font-size: 70px; margin: 0px;">76</h1>
         <span style="margin: 0px;">of 100</span>
       </div>
-      <h2 style="color: var(--white); margin: 0px;">Great</h2>
-      <p style="width: 70%; font-size: 13px; text-align: center; margin-bottom: 35px;">You have scored higher than 65% of the people who have taken these tests.</p>
+      <h2 id="resultText" style="color: var(--white); margin: 0px;">Great</h2>
+      <p id="resultDescription" style="width: 70%; font-size: 13px; text-align: center; margin-bottom: 35px;">You have scored higher than 65% of the people who have taken these tests.</p>
     </div>
     <div class="summary-box">
       <h4 style="font-weight: 700; font-size: 20px; margin-left: 15px; margin-bottom: 10px;">Summary</h4>
-      <div class="subject-mainbox">
-        <div class="subjects" style="background-color: hsl(0, 100%, 67%,10%);">
-          <img class="logo" src="assets\images\icon-reaction.svg" alt="icon-reaction">
-          <div class="subject-info">
-            <span class="subject-name" style="color: var(--light-red);">Reaction</span>
-            <span class="subject-percent"><span class="percent">80</span>/100</span>
-          </div>
-        </div>
-        <div class="subjects" style="background-color: hsla(39, 100%, 56%,10%);">
-          <img class="logo" src="assets\images\icon-memory.svg" alt="icon-memory">
-          <div class="subject-info">
-            <span class="subject-name" style="color: var(--orangey-yellow);">Memory</span>
-            <span class="subject-percent"><span class="percent">92</span>/100</span>
-          </div>
-        </div>
-        <div class="subjects" style="background-color: hsla(166, 100%, 37%,10%);">
-          <img class="logo" src="assets\images\icon-verbal.svg" alt="icon-verbal">
-          <div class="subject-info">
-            <span class="subject-name" style="color: var(--green-teal);">Verbal</span>
-            <span class="subject-percent"><span class="percent">61</span>/100</span>
-          </div>
-        </div>
-        <div class="subjects" style="background-color: hsla(234, 85%, 45%, 10%);">
-          <img class="logo" src="assets\images\icon-visual.svg" alt="icon-visual">
-          <div class="subject-info">
-            <span class="subject-name" style="color: var(--cobalt-blue);">Visual</span>
-            <span class="subject-percent"><span class="percent">72</span>/100</span>
-          </div>
-        </div>
+      <div id="subjectContainer" class="subject-mainbox">
+        <!-- javascript will add here -->
       </div>
       
       <button>Continue</button>
     </div>
-  </div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
