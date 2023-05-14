@@ -106,11 +106,27 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-height: 245px;
+    overflow: auto;
+    overflow: auto;
+    border-radius: 30px;
+    
   }
+  /* .subject-mainbox::-webkit-scrollbar {
+    width: 5px;
+  }
+  .subject-mainbox::-webkit-scrollbar-thumb {
+    background-color: var(--dark-gray-blue);
+    border-radius: 5px;
+  }
+  .subject-mainbox::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    
+  } */
   
   .subjects {
     width: 90%;
-    height: 50px;
+    min-height: 50px;
     border-radius: 10px;
     margin: 5px;
     margin-left: 15px;
@@ -155,7 +171,7 @@ margin: 10px;
     margin-top: 20px;
     margin-left: 15px;
     max-width: 375px;
-    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-color: var(--dark-gray-blue);
     font-size: large;
     font-weight: 700;
     color: var(--light-lavender);
@@ -167,8 +183,8 @@ margin: 10px;
 
   button:hover {
     cursor: pointer;
-    background-color: var(--light-royal-blue);
-    background-image: none;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-color: none;
 
     }
 
